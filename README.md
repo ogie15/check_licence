@@ -29,5 +29,7 @@ If entering **no** there will be a follow-up prompt to enter a number where you 
 
 This number is gotten from the *LicenseLog.txt* file under the *serial number* column 
 
+Open *LicenseLog.txt* or *NoLicenseLog.txt* with Excel and select delimiter as **,** to get good view 
+
 ☺️ for further inquiries reach out to [Ogie](https://www.linkedin.com/in/ibhadogiemu-okougbo-311a5ab3)
 
