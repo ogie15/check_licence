@@ -1,9 +1,9 @@
 # check_licence
-This will check **ServiceName, ServiceType, TargetClass and ProvisioningStatus of each ServicePlan**
+This will check **ServiceName, ServiceType, TargetClass and ProvisioningStatus of each service plan**
 
-For this to work need to connect to office365 via powershell 
+For this to work need to connect to office365 via PowerShell 
 
-Example will be to use the 
+An example will be to use the 
 
 #$UserCredential = Get-Credential#
 
@@ -17,7 +17,7 @@ Valid options will be **yes** or **y** for a fresh check
 
 And **no** or **n** 
 
-If you had initally run the script and there was a break in network or time out in the cmdlet used because of throttling from Microsoft or any other reason that makes you run the script again that is when the **no** option is needed
+If you had initially run the script and there was a break in-network or time out in the cmdlet used because of throttling from Microsoft or any other reason that makes you run the script again that is when the **no** option is needed
 
 Two files are generated in this script 
 
@@ -25,9 +25,9 @@ Two files are generated in this script
 
 2. *NoLicenseLog.txt* "Hold logs of users without service plan"
 
-If entering **no** there will be a follow up prompt to enter a number where you would want to start from 
+If entering **no** there will be a follow-up prompt to enter a number where you would want to start from 
 
 This number is gotten from the *LicenseLog.txt* file under the *serial number* column 
 
-☺️ for futher inquiries reach out to [Ogie](https://www.linkedin.com/in/ibhadogiemu-okougbo-311a5ab3)
+☺️ for further inquiries reach out to [Ogie](https://www.linkedin.com/in/ibhadogiemu-okougbo-311a5ab3)
 
