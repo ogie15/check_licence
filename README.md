@@ -1,4 +1,7 @@
 # check_licence
+
+Kindlu Note for Serv2.ps1 the below instructions do not apply
+
 This will check **ServiceName, ServiceType, TargetClass and ProvisioningStatus of each service plan**
 
 For this to work need to connect to office365 via PowerShell 
