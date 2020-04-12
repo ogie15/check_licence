@@ -1,6 +1,5 @@
 #region working
-
-$Header1 = "UserPrincipalName," + "ServiceName," + "ServiceType," + "TargetClass," + "ProvisioningStatus," + "LicenseName,"
+$Header1 = "UserPrincipalName," + "LicenseName," + "ServiceType," + "TargetClass," + "ProvisioningStatus," + "ServiceName,"
 
 $Header1 | Out-File -FilePath .\LicenseLog.txt
 
@@ -10,19 +9,16 @@ $UsersUPN = $AllUsers | Select-Object UserPrincipalName
 
 foreach ($Upn in $UsersUPN) {
     $SingleUser = $Upn.UserPrincipalName.ToString()
-    
-    [string]$Store
-
-    $Total = @()
 
     $Skus = (((Get-MsolUser -UserPrincipalName $SingleUser).Licenses).AccountSku).SkuPartNumber
     
     Write-Output $SingleUser
 
     ForEach ($Sku in $Skus) {
-        # Write-Output $Sku
 
-        # Write-Output "oj"
+        [string]$Store = " "
+
+        $Total = @()
         
         $ServiceNames = ((((Get-MsolUser -UserPrincipalName $SingleUser).Licenses).ServiceStatus).ServicePlan).ServiceName 
 
@@ -74,7 +70,6 @@ foreach ($Upn in $UsersUPN) {
         $Count = $FinalServiceName.Count
 
         $NewCount = $Count-1
-        # Write-Output $Count
 
         $Looper = @(0..$NewCount)
 
