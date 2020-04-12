@@ -1,6 +1,6 @@
 # check_licence
 
-#Kindly Note for Serv2.ps1 the below instructions do not apply
+# Kindly Note for Serv2.ps1 the below instructions do not apply
 
 This will check **ServiceName, ServiceType, TargetClass and ProvisioningStatus of each service plan**
 
