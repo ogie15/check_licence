@@ -1,5 +1,5 @@
 #region working
-$Header1 = "UserPrincipalName," + "LicenseName," + "ServiceType," + "TargetClass," + "ProvisioningStatus," + "ServiceName,"
+$Header1 = "UserPrincipalName," + "LicenseName," + "ServiceName," + "ServiceType," + "TargetClass," + "ProvisioningStatus,"
 
 $Header1 | Out-File -FilePath .\LicenseLog.txt
 
